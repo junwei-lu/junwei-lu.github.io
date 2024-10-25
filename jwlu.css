@@ -281,6 +281,12 @@ div.abstractSection {
     margin-left: -20px;
 }
 
+.centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .research-subintro {
     margin-top: 5px; 
     margin-bottom: 5px; 

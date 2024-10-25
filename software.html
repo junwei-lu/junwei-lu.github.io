@@ -56,8 +56,10 @@ ga('send', 'pageview');
                      </p>   
                      <p class="research-intro">
                         <p>The <strong>CombInference package</strong> implementation of the methods proposed in the paper is designed as a tool for selecting graph features from high-dimensional graphical models, specifically focusing on controlling the false discovery rate (FDR). This package applies methods like the <em>K-dimensional Persistent Homology Adaptive Selection (KHAN) algorithm</em> to select significant topological features across various fields, such as biology, chemistry, neuroscience, and sociology.</p>
-
-    <ul>
+                        <div class="centered-image">
+                            &nbsp;  <img src="https://github.com/junwei-lu/CombInference/raw/main/img/combinference.png" alt="Overview" width="800" />
+                        </div>
+                            <ul>
         <li><strong>Graph Feature Selection:</strong> The package enables users to detect significant substructures in graphs (such as cliques, loops, and hubs) and assess uncertainty using FDR control. It is particularly useful for applications like <em>protein substructure analysis</em>, <em>brain network connectivity</em>, and <em>social network analysis</em>.</li>
 
         <li><strong>Topological Feature Detection:</strong> Utilizing persistent homology, the package identifies topological features such as cycles and cliques that persist across multiple scales, providing insights into network connectivity and behavior under various conditions.</li>
@@ -76,7 +78,9 @@ ga('send', 'pageview');
                          </p>   
                          <p class="research-intro">
                             <p>The <strong>RankInference package</strong>  is designed to implement nonparametric inferential methods for ranking large language models (LLMs) based on pairwise comparisons. It is built on the extended Bradley-Terry-Luce (BTL) model and provides a robust framework for testing hypotheses and constructing confidence intervals of LLM rankings across different contexts. This package facilitates reliable model comparisons, particularly in trust-sensitive fields such as medicine, law, and finance.</p>
-
+                            <div class="centered-image">
+                                &nbsp;  <img src="https://github.com/junwei-lu/RankInference/raw/main/img/rankinference.png" alt="Overview" width="800" />
+                            </div>
                             <ul>
                                 <li><strong>Nonparametric Ranking Inference:</strong> The package applies a nonparametric ranking model that adjusts the ranking based on the context of the prompt, ensuring accuracy across domain-specific scenarios.</li>
                         
@@ -116,7 +120,9 @@ ga('send', 'pageview');
                                  </p>   
                                  <p class="research-intro">
                                     <p>The <strong>FederatedRL R package</strong>  implements distributed reinforcement learning algorithms designed for multi-institutional datasets, focusing on optimizing dynamic treatment regimes (DTRs) in healthcare settings. The package is tailored for environments with privacy constraints and distributed data sources, offering efficient federated learning solutions.</p>
-                                
+                                    <div class="centered-image">
+                                        &nbsp;  <img src="https://github.com/junwei-lu/FederatedRL/raw/main/img/fdrl.png" alt="Overview" />
+                                    </div>
                                     <ul>
                                         <li><strong>Federated Reinforcement Learning:</strong> FederatedRL supports offline reinforcement learning (RL) by allowing co-training across multiple institutions while preserving privacy. It applies the Markov Decision Process (MDP) model to personalize treatment strategies across different data sources without directly sharing patient-level data.</li>
                                 
@@ -141,7 +147,9 @@ ga('send', 'pageview');
                                      </p>   
                                      <p class="research-intro">
                                         <p>The <strong>ARCH R package</strong> implements methods for generating large-scale knowledge graphs (KG) by analyzing codified and narrative data from electronic health records (EHR). This package is designed to address challenges in EHR analysis by extracting meaningful relationships between clinical concepts, represented as codified data and unstructured narrative notes, using advanced representation learning techniques. It combines natural language processing (NLP) and codified data to create comprehensive, low-dimensional embeddings of clinical features with statistical certainty.</p>
-                                    
+                                        <div class="centered-image">
+                                            &nbsp;  <img src="https://github.com/junwei-lu/ARCH/raw/main/img/arch.png" alt="Overview" width="800" />
+                                        </div>
                                         <ul>
                                             <li><strong>Knowledge Graph Construction:</strong> The ARCH package builds sparse, large-scale knowledge graphs from EHR data, capturing relationships between codified and narrative clinical features while ensuring statistical accuracy through uncertainty quantification.</li>
                                     
@@ -161,8 +169,7 @@ ga('send', 'pageview');
                                          </p>   
                                          <p class="research-intro">
                                             <p>The <strong>HyperbolicEHR package</strong>  implements a multi-source hierarchical clustering algorithm specifically designed to process large-scale electronic health records (EHR) data. This package addresses the complexity and lack of organization often encountered in EHR datasets by leveraging hyperbolic geometry to construct efficient hierarchical structures. By integrating multiple sources of codified and narrative medical data, the HyperbolicEHR package enhances the analysis and interpretability of medical codes such as diagnoses, medications, and laboratory results.</p>
-                                        
-                                            <ul>
+                                             <ul>
                                                 <li><strong>Multi-Source Data Integration:</strong> HyperbolicEHR utilizes neural network-parameterized optimal transport to unify diverse medical data sources, such as PheCodes, RxNorm, and LOINC, as well as local codes. This integration ensures that heterogeneous data sources are harmonized, providing a more complete and robust clinical dataset for analysis.</li>
                                         
                                                 <li><strong>Hierarchical Clustering with Hyperbolic Geometry:</strong> The package applies hyperbolic geometry, which is well-suited for representing hierarchical relationships, to model complex hierarchical structures within EHR data. This method captures the inherent relationships between medical codes more efficiently than traditional Euclidean space models.</li>
