@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head profile="http://www.w3.org/2006/03/hcard">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+        <link href="jwlu.css" rel="stylesheet" type="text/css"/>                
+        <link href="animate.css" rel="stylesheet"/>                
+        <title>Junwei Lu, Harvard University</title>
+        <script type="text/javascript"> 
+function expand(param) { 
+    param.style.display=(param.style.display=="none") ? "" : "none"; 
+} 
+        </script>
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-55227794-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+        <div class="container700 vcard">
+            <div class="titletext">
+                Software 
+            </div>
+
+            <div id="section-links">
+                <div class="sectionContainer">
+                    <div class="section">
+                        <a href=
+                        "index.html">
+                            Homepage</a>
+                            <a href=
+                        "research.html">
+                            Research</a>
+                            <a href=
+                            "teaching.html">
+                                Teaching</a>
+                    </div>                   
+                </div>
+            </div>
+
+            <div class="content">
+                <p id="stat" class="research-title" style="margin-top: 0px;">
+                    Statistics Software
+                <hr class="research-title-sep">
+                </p>
+                <p class="research-subtitle">
+                    CombInference: Package for combinatorial inference <a href="https://github.com/junwei-lu/CombInference">[Github]</a> 
+                     <hr class="research-subtitle-sep">
+                     </p>   
+                     <p class="research-intro">
+                        <p>The <strong>CombInference package</strong> implementation of the methods proposed in the paper is designed as a tool for selecting graph features from high-dimensional graphical models, specifically focusing on controlling the false discovery rate (FDR). This package applies methods like the <em>K-dimensional Persistent Homology Adaptive Selection (KHAN) algorithm</em> to select significant topological features across various fields, such as biology, chemistry, neuroscience, and sociology.</p>
+
+    <ul>
+        <li><strong>Graph Feature Selection:</strong> The package enables users to detect significant substructures in graphs (such as cliques, loops, and hubs) and assess uncertainty using FDR control. It is particularly useful for applications like <em>protein substructure analysis</em>, <em>brain network connectivity</em>, and <em>social network analysis</em>.</li>
+
+        <li><strong>Topological Feature Detection:</strong> Utilizing persistent homology, the package identifies topological features such as cycles and cliques that persist across multiple scales, providing insights into network connectivity and behavior under various conditions.</li>
+
+        <li><strong>Adaptive Screening and Selection:</strong> The KHAN algorithm within the package adaptively selects important topological features across continuous filtration levels, ensuring both computational efficiency and strong statistical performance.</li>
+
+        <li><strong>Application to Biological Data:</strong> This package can be applied to real-world datasets, like SARS-CoV-2 protein structure analysis, helping researchers identify potential target residues critical for protein binding processes.</li>
+    </ul>
+
+    <p>This package is an ideal tool for researchers and data scientists working with high-dimensional graphical models and networks, allowing them to explore and quantify significant structural features with controlled false discovery rates.</p>
+                    </p>  
+
+                    <p class="research-subtitle">
+                        RankInference: Package for ranking inference <a href="https://github.com/junwei-lu/RankInference">[Github]</a> 
+                         <hr class="research-subtitle-sep">
+                         </p>   
+                         <p class="research-intro">
+                            <p>The <strong>RankInference package</strong>  is designed to implement nonparametric inferential methods for ranking large language models (LLMs) based on pairwise comparisons. It is built on the extended Bradley-Terry-Luce (BTL) model and provides a robust framework for testing hypotheses and constructing confidence intervals of LLM rankings across different contexts. This package facilitates reliable model comparisons, particularly in trust-sensitive fields such as medicine, law, and finance.</p>
+
+                            <ul>
+                                <li><strong>Nonparametric Ranking Inference:</strong> The package applies a nonparametric ranking model that adjusts the ranking based on the context of the prompt, ensuring accuracy across domain-specific scenarios.</li>
+                        
+                                <li><strong>Pairwise and Top-K Hypothesis Testing:</strong> Users can test pairwise rankings between LLMs or determine whether a model is among the top-K models in a given domain, allowing for enhanced decision-making in selecting reliable models.</li>
+                        
+                                <li><strong>Confidence Diagrams:</strong> The package introduces a novel concept of confidence diagrams based on Hasse diagrams, which provide global insights into the hierarchical relationships between LLMs, visualizing the performance range and ranking variability.</li>
+                        
+                                <li><strong>Robust Bootstrap Confidence Intervals:</strong> The package uses Gaussian multiplier bootstrap methods to compute confidence intervals for ranking models, ensuring reproducible and trustable results across applications.</li>
+                            </ul>
+                        
+                            <p>This package is ideal for researchers, data scientists, and practitioners working with LLMs who need reliable methods for model comparison and ranking in dynamic, real-world scenarios, especially where trust and accuracy are paramount.</p>
+                        </p>
+
+                        <p class="research-subtitle">
+                            DIANE: Package for distributed non-convex optimization <a href="https://github.com/junwei-lu/DIANE">[Github]</a> 
+                             <hr class="research-subtitle-sep">
+                             </p>   
+                             <p class="research-intro">
+                                <p>The <strong>DIANE R package </strong> is an implementation of the methods proposed in the paper for learning feature embeddings from multi-institutional Electronic Health Records (EHR) data. The package is designed to overcome the challenges of non-convexity and communication efficiency in distributed datasets. DIANE utilizes a low-rank Ising graphical model with a non-convex bi-factored surrogate loss to estimate knowledge graphs and embeddings from large-scale binary data.</p>
+                            
+                                <ul>
+                                    <li><strong>Efficient Distributed Learning:</strong> The package enables computationally efficient and privacy-preserving learning from EHR data distributed across multiple institutions, using a one-shot communication process to transfer gradients between sites.</li>
+                            
+                                    <li><strong>Low-Rank Embedding Estimation:</strong> The DIANE algorithm applies a low-rank Ising model to estimate semantic embeddings for high-dimensional binary data. This is particularly useful for applications like <em>patient phenotyping</em> and <em>clinical feature dependency analysis</em>.</li>
+                            
+                                    <li><strong>Federated Algorithm:</strong> DIANE ensures data security by computing gradients locally at each healthcare database, and only transmits aggregated gradient information to a central master site, preserving patient privacy while achieving robust feature embedding estimation.</li>
+                            
+                                    <li><strong>Applications to Biomedical Data:</strong> The package can be used to construct knowledge graphs, detect relationships between clinical features, and perform predictive modeling using large-scale EHR data, such as for neurodegenerative disease phenotyping.</li>
+                                </ul>
+                            
+                                <p>This package is ideal for researchers and data scientists working with large-scale, distributed EHR data, offering powerful methods for feature extraction, knowledge graph construction, and risk prediction while maintaining computational and communication efficiency.</p>
+                              </p>
+
+                              <p class="research-subtitle">
+                                FederatedRL: Package for federated reinforcement learning <a href="https://github.com/junwei-lu/FederatedRL">[Github]</a> 
+                                 <hr class="research-subtitle-sep">
+                                 </p>   
+                                 <p class="research-intro">
+                                    <p>The <strong>FederatedRL R package</strong>  implements distributed reinforcement learning algorithms designed for multi-institutional datasets, focusing on optimizing dynamic treatment regimes (DTRs) in healthcare settings. The package is tailored for environments with privacy constraints and distributed data sources, offering efficient federated learning solutions.</p>
+                                
+                                    <ul>
+                                        <li><strong>Federated Reinforcement Learning:</strong> FederatedRL supports offline reinforcement learning (RL) by allowing co-training across multiple institutions while preserving privacy. It applies the Markov Decision Process (MDP) model to personalize treatment strategies across different data sources without directly sharing patient-level data.</li>
+                                
+                                        <li><strong>Communication-Efficient Algorithm:</strong> The package implements communication-efficient algorithms that reduce the need for frequent communication between institutions, facilitating privacy-preserving learning by exchanging summary statistics rather than raw data.</li>
+                                
+                                        <li><strong>Multi-Institutional Datasets:</strong> FederatedRL is optimized for healthcare datasets like electronic health records (EHRs) distributed across different medical institutions. It handles heterogeneity in treatment policies and patient populations, ensuring robust and accurate policy optimization.</li>
+                                
+                                        <li><strong>Applications in Healthcare:</strong> The package is ideal for clinical decision-making, such as optimizing sepsis management strategies or personalized treatments, where data from multiple sites can improve the quality of learned policies while maintaining privacy.</li>
+                                    </ul>
+                                
+                                    <p>FederatedRL is designed for researchers and practitioners in healthcare and other domains requiring distributed reinforcement learning. It offers powerful tools for creating dynamic treatment regimes in environments where privacy and efficiency are essential.</p>
+                                 </p>
+
+                                 <p id="bio" class="research-title" style="margin-top: 0px;">
+                                    Bioinformatics Software
+                                <hr class="research-title-sep">
+                                </p>
+
+                                <p class="research-subtitle">
+                                    ARCH: Package for intergrating codified and narrative data from electronic health records  <a href="https://github.com/junwei-lu/ARCH">[Github]</a> 
+                                     <hr class="research-subtitle-sep">
+                                     </p>   
+                                     <p class="research-intro">
+                                        <p>The <strong>ARCH R package</strong> implements methods for generating large-scale knowledge graphs (KG) by analyzing codified and narrative data from electronic health records (EHR). This package is designed to address challenges in EHR analysis by extracting meaningful relationships between clinical concepts, represented as codified data and unstructured narrative notes, using advanced representation learning techniques. It combines natural language processing (NLP) and codified data to create comprehensive, low-dimensional embeddings of clinical features with statistical certainty.</p>
+                                    
+                                        <ul>
+                                            <li><strong>Knowledge Graph Construction:</strong> The ARCH package builds sparse, large-scale knowledge graphs from EHR data, capturing relationships between codified and narrative clinical features while ensuring statistical accuracy through uncertainty quantification.</li>
+                                    
+                                            <li><strong>Codified and NLP Data Integration:</strong> ARCH effectively integrates both codified and unstructured narrative data, allowing users to analyze vast amounts of EHR data for complex clinical tasks such as drug side-effect detection, disease phenotyping, and clinical feature dependency analysis.</li>
+                                    
+                                            <li><strong>Feature Representation and Embeddings:</strong> Using low-dimensional semantic embeddings, ARCH captures relationships between over 60,000 EHR concepts, improving predictive modeling and disease classification tasks by enhancing weakly supervised phenotyping algorithms.</li>
+                                    
+                                            <li><strong>Applications in EHR Analysis:</strong> The package enables users to identify known relationships between clinical features, predict adverse drug reactions, and phenotype diseases such as Alzheimer's. By leveraging both codified and narrative data, ARCH improves the accuracy of clinical predictions and patient subgroup identification.</li>
+                                        </ul>
+                                    
+                                        <p>The ARCH R package is particularly valuable for researchers and healthcare analysts working with large-scale, multi-institutional EHR datasets. It enhances data representation, feature extraction, and knowledge discovery, making it an essential tool for clinical decision-making and biomedical research.</p>
+                                     </p>
+
+                                     <p class="research-subtitle">
+                                        hyperbolicEHR: Package for learning hyperbolic embeddings for electronic health records  <a href="https://github.com/junwei-lu/hyperbolicEHR">[Github]</a> 
+                                         <hr class="research-subtitle-sep">
+                                         </p>   
+                                         <p class="research-intro">
+                                            <p>The <strong>HyperbolicEHR package</strong>  implements a multi-source hierarchical clustering algorithm specifically designed to process large-scale electronic health records (EHR) data. This package addresses the complexity and lack of organization often encountered in EHR datasets by leveraging hyperbolic geometry to construct efficient hierarchical structures. By integrating multiple sources of codified and narrative medical data, the HyperbolicEHR package enhances the analysis and interpretability of medical codes such as diagnoses, medications, and laboratory results.</p>
+                                        
+                                            <ul>
+                                                <li><strong>Multi-Source Data Integration:</strong> HyperbolicEHR utilizes neural network-parameterized optimal transport to unify diverse medical data sources, such as PheCodes, RxNorm, and LOINC, as well as local codes. This integration ensures that heterogeneous data sources are harmonized, providing a more complete and robust clinical dataset for analysis.</li>
+                                        
+                                                <li><strong>Hierarchical Clustering with Hyperbolic Geometry:</strong> The package applies hyperbolic geometry, which is well-suited for representing hierarchical relationships, to model complex hierarchical structures within EHR data. This method captures the inherent relationships between medical codes more efficiently than traditional Euclidean space models.</li>
+                                        
+                                                <li><strong>Automated Hierarchy Generation:</strong> HyperbolicEHR automatically generates hierarchical structures from the integrated EHR data, facilitating improved organization, clustering, classification, and predictive modeling tasks. These hierarchies can reveal important co-occurrence patterns and clinical relationships that are critical for decision-making in healthcare.</li>
+                                        
+                                                <li><strong>Enhanced EHR Analysis:</strong> By applying the HyperbolicEHR package, healthcare providers and researchers can navigate the complexities of EHR data more efficiently, identifying trends and relationships across medical concepts. This leads to improved clinical decision-making, patient care, and research outcomes.</li>
+                                            </ul>
+                                        
+                                            <p>The HyperbolicEHR R package is ideal for researchers and healthcare analysts seeking to leverage hierarchical clustering methods for large, complex EHR datasets. It provides a comprehensive approach to organizing and analyzing clinical data, enabling more accurate and actionable insights in healthcare applications.</p>
+                                        </p>
+
+                                        <p class="research-subtitle">
+                                            MedArena: Comparing different medical large language models  <a href="https://github.com/junwei-lu/MedArena">[Github]</a> 
+                                             <hr class="research-subtitle-sep">
+                                             </p>   
+                                             <p class="research-intro">
+                                                <p>The <strong>MedArena</strong> provides a comprehensive framework for evaluating the performance of large language models (LLMs) specifically in the medical domain. This package is designed to test models' understanding and interpretation of medical concepts, terminology, and contextual relationships that are critical for accurate decision-making in healthcare.</p>                                            
+                                                <ul>
+                                                    <li><strong>Medical Knowledge Evaluation:</strong> MedArena tests models on their ability to accurately interpret medical language, including diagnoses, treatment options, drug interactions, and medical procedures. It provides evaluation metrics tailored to the healthcare industry, ensuring models perform well in trust-sensitive environments such as clinical decision support systems.</li>
+                                            
+                                                    <li><strong>Contextual Testing for Medical Scenarios:</strong> The package evaluates models' performance in real-world medical contexts, including diagnosis-based scenarios, patient history assessments, and complex multi-disease cases. This allows researchers and practitioners to assess model reliability in clinical decision-making.</li>
+                                            
+                                                    <li><strong>Comparison Across Multiple LLMs:</strong> MedArena facilitates the comparison of different LLMs, enabling users to benchmark various models against each other for medical tasks such as symptom analysis, drug recommendations, and treatment protocols. This ensures that the most effective models are identified for healthcare applications.</li>
+                                            
+                                                    <li><strong>Domain-Specific Metrics:</strong> MedArena offers specialized evaluation metrics tailored to healthcare use cases, such as precision, recall, and F1 scores focused on clinical relevance and patient safety. The package also supports model evaluation in multilingual medical contexts, accommodating diverse healthcare environments.</li>
+                                                </ul>
+                                            
+                                                <p>The <strong>LLM Arena</strong> R package is a valuable tool for healthcare researchers, data scientists, and clinicians aiming to evaluate and compare the performance of large language models in medical applications. By providing a robust testing environment and domain-specific metrics, it ensures that models are accurate, reliable, and effective for real-world healthcare use cases.</p>
+                                             </p>
+
+                                        
+
+                                        <p class="research-subtitle">
+                                            BONME: Package for intergating multi-institutional electronic health records  <a href="https://github.com/junwei-lu/BONME">[Github]</a> 
+                                             <hr class="research-subtitle-sep">
+                                             </p>   
+                                             <p class="research-intro">
+                                                <p>The <strong>BONME</strong> R package implements the Block-wise Overlapping Noisy Matrix Embedding (BONME) method, designed for integrating and analyzing multi-source electronic health record (EHR) data. This package provides a robust framework for handling block-wise missingness in data, ensuring efficient completion of missing submatrices and enabling comprehensive EHR analysis across multiple sources.</p>
+
+                                            
+                                                <ul>
+                                                    <li><strong>Multi-Source Data Integration:</strong> BONME addresses the challenge of combining multiple, heterogeneous EHR datasets, where data may have overlapping but non-identical entries. It integrates diverse medical data sources (e.g., from different hospitals or countries) to create a unified dataset for further analysis.</li>
+                                            
+                                                    <li><strong>Block-wise Matrix Completion:</strong> The package excels in completing block-wise missing data patterns common in multi-institutional EHR datasets. It uses low-rank matrix completion techniques to estimate missing blocks, leveraging overlapping data between different sources to fill in the gaps efficiently.</li>
+                                            
+                                                    <li><strong>Noise-Resilient Algorithms:</strong> BONME incorporates noise-handling mechanisms to ensure accurate matrix completion even in the presence of noisy or corrupted data entries, which is typical in large-scale EHR data collected from different healthcare systems.</li>
+                                            
+                                                    <li><strong>EHR Data Integration:</strong> By integrating EHR data from different institutions and formats, BONME helps healthcare researchers and analysts construct comprehensive knowledge graphs or disease networks. It allows for the identification of relationships between medical concepts, improving disease phenotyping and prediction tasks.</li>
+                                                </ul>
+                                            
+                                                <p>The <strong>BONME</strong> R package is an invaluable tool for healthcare researchers, data scientists, and institutions that require robust methods to integrate and analyze large, multi-source EHR datasets. It helps uncover hidden relationships between clinical features and enhances the overall quality of healthcare analytics.</p>
+                                            </p>
+        
+                                            <body>
+                                                <div class="fixed-footer">
+                                                    <div class="animated bounceIn">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <a href="software.html#stat">[Statistics Software]</a>&nbsp;&nbsp;&nbsp;
+                                                        <a href="software.html#bio">[Bioinformatics Software]</a>
+                                                    </div>
+                                                </div>
+                                            </body>
+
+
+
+        <!-- Start of StatCounter Code for Tumblr -->
+<script type="text/javascript">
+var sc_project=11257359; 
+var sc_invisible=1; 
+var sc_security="4c95dece"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counter" href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11257359/0/4c95dece/1/" alt="free
+hit counter"></a></div></noscript>
+<!-- End of StatCounter Code for Tumblr -->
+
+    </body>
+</html>
