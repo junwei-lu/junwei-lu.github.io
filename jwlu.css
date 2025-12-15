@@ -392,6 +392,19 @@ div.abstractSection {
     opacity: 0.95;
 }
 
+.book-about {
+    margin-top: 12px;
+    color: #333;
+    line-height: 1.55;
+}
+
+.book-about-title {
+    font-family: 'MyriadProSemibold';
+    color: #385792;
+    font-size: 115%;
+    margin: 0px 0px 6px 0px;
+}
+
 @media (max-width: 700px) {
     .book-card {
         flex-direction: column;
