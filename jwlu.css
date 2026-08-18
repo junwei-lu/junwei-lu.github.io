@@ -221,6 +221,10 @@ div.abstractSection {
     color: #CC0829;
 }
 
+.note {
+    color: #000;
+}
+
 .authors {
     font-size: 80%;
 }
